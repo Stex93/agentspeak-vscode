@@ -1,0 +1,26 @@
+{
+    "name": "agentspeak",
+    "displayName": "AgentSpeak",
+    "description": "AgentSpeak - Jason (.asl) syntax highlighting for VS Code",
+    "publisher": "Stex93",
+    "version": "1.0",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "agentspeak",
+            "aliases": ["AgentSpeak", "agentspeak"],
+            "extensions": [".asl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "agentspeak",
+            "scopeName": "source.agentspeak",
+            "path": "./syntaxes/agentspeak.json"
+        }]
+    }
+}
